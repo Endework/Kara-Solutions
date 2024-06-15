@@ -6,14 +6,14 @@ import sys
 # Setting up logging
 logging.basicConfig(filename='object_detection.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Function to install packages
+
 def install(package):
     try:
         __import__(package)
     except ImportError:
         subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-# Ensure psutil is installed
+
 install('psutil')
 
 import torch
@@ -31,7 +31,7 @@ root_dir = r'C:\Users\ende\Desktop\10x\Week-7\Scripts\temp\downloaded_photos'  #
 # Subdirectories to process
 subdirs = ['CheMed', 'lobelia']
 
-# Create a list to store detection results
+#  a list to store detection results
 detection_results = []
 
 # Loop through each subdirectory
