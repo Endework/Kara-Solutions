@@ -2,7 +2,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-# Replace with the actual image URL
+
 image_url = 'https://example.com/path/to/your/image.jpg'  
 file_path = 'C:\\Users\\ende\\Desktop\\10x\\Week-7\\Scripts\\temp\\downloaded_photos\\lobelia\\photo_9@13-11-2021_18-13-10.jpg'
 
